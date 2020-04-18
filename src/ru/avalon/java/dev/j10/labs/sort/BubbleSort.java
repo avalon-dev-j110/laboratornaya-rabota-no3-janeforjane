@@ -20,5 +20,16 @@ public class BubbleSort implements Sort {
         /*
          * TODO(Студент): Реализовать метод sort класса BubbleSort
          */
+
+        for(int x = 0; x < array.length; x++) {
+            for(int i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    int z = array[i + 1];
+                    array[i + 1] = array[i];
+                    array[i] = z;
+                }
+
+            }
+        }
     }
 }
