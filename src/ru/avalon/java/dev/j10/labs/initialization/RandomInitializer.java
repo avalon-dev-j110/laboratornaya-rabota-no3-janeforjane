@@ -23,17 +23,28 @@ public class RandomInitializer implements Initializer {
      *
      * @param array массив, подлежащий инициализации
      */
+
+    private int minNum;
+    private int maxNum;
+
+    public RandomInitializer (int minNum, int maxNum) {
+        this.minNum = minNum;
+        this.maxNum = maxNum;
+
+    }
+
     public void initialize(int[] array) {
         /*
          * TODO(Студент): Реализовать метод initialize класса RandomInitializer
          */
+
 
         Random random = new Random();
 
 
         for (int i = 0; i < array.length; i++) {
 
-            array[i] = (random.nextInt(100) -50);
+            array[i] = (random.nextInt(maxNum - minNum) + minNum);
         }
     }
 }

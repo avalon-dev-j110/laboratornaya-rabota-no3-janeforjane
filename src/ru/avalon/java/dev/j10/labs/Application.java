@@ -14,7 +14,7 @@ public class Application {
 
 
 		Initializer fibonacciInitializer = new FibonacciInitializer();
-		Initializer randomInitializer = new RandomInitializer();
+		Initializer randomInitializer = new RandomInitializer(-50, 50);
 		Sort bubbleSort = new BubbleSort();
 		Sort selectionSort = new SelectionSort();
 		Sort shellSort = new ShellSort();
